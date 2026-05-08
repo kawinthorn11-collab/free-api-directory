@@ -28,7 +28,7 @@ This API provides a fully searchable, programmatic REST interface to the famous 
 ### Endpoint 1: Get Categories
 *   **Name:** `Get Categories`
 *   **Method:** `GET`
-*   **Path:** `/api/categories`
+*   **Path:** `/categories`
 *   **Description:** `Returns a list of all 51 available API categories.`
 *   **Example Response:**
     ```json
@@ -47,7 +47,7 @@ This API provides a fully searchable, programmatic REST interface to the famous 
 ### Endpoint 2: Search Entries
 *   **Name:** `Search Entries`
 *   **Method:** `GET`
-*   **Path:** `/api/entries`
+*   **Path:** `/entries`
 *   **Query Parameters (All Optional):** 
     - `category` (String) - e.g., `Weather`
     - `title` (String)
@@ -75,7 +75,7 @@ This API provides a fully searchable, programmatic REST interface to the famous 
 ### Endpoint 3: Random API
 *   **Name:** `Get Random API`
 *   **Method:** `GET`
-*   **Path:** `/api/random`
+*   **Path:** `/random`
 *   **Query Parameters:** `category` (String, Optional)
 *   **Example Response:**
     ```json
@@ -128,7 +128,7 @@ Hey guys, the `public-apis` repo on GitHub is great (400k+ stars), but manually 
 
 So I wrote a parser to extract all 1,400+ APIs and wrapped it in a fast REST API.
 
-You can query `/api/categories`, search via `/api/entries?category=Weather&cors=yes&auth=No`, or just hit `/api/random` if you need an idea for a weekend project.
+You can query `/categories`, search via `/entries?category=Weather&cors=yes&auth=No`, or just hit `/random` if you need an idea for a weekend project.
 
 It's completely free to use (1,000 req/mo limit to prevent abuse). You can grab the endpoint here:
 [Link to your RapidAPI listing once published]
