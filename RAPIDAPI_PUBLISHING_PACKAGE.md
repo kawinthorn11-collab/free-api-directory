@@ -133,4 +133,4 @@ So I wrote a parser to extract all 1,400+ APIs and wrapped it in a fast REST API
 You can query `/categories`, search via `/entries?category=Weather&cors=yes&auth=No`, or just hit `/random` if you need an idea for a weekend project.
 
 It's completely free to use (1,000 req/mo limit to prevent abuse). You can grab the endpoint here:
-[Link to your RapidAPI listing once published]
+https://rapidapi.com/kawinthorn11collab/api/free-api-directory-api

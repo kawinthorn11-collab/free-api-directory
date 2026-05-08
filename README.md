@@ -4,6 +4,29 @@ This is a fast, searchable REST API wrapped around the famous open-source [publi
 
 The original official JSON API for that repository went offline. This project restores that functionality using a fully automated Python parser and a FastAPI backend.
 
+## Live API
+
+This project is available on RapidAPI with a free tier:
+
+[Use the Public Free APIs Directory on RapidAPI](https://rapidapi.com/kawinthorn11collab/api/free-api-directory-api)
+
+Live backend:
+
+```text
+https://free-api-directory-nxmezfwbj-kawinthorn11-7692s-projects.vercel.app
+```
+
+Core endpoints:
+
+```text
+GET /categories
+GET /entries
+GET /entries?category=Weather&cors=yes
+GET /entries?auth=No&https=true
+GET /random
+GET /random?category=Weather
+```
+
 ## Features
 - **1,400+ Free APIs Indexed**: Constantly up-to-date with the master Markdown file.
 - **Search & Filter**: Find APIs by category, title, auth type, HTTPS support, and CORS capability.
