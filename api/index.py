@@ -32,6 +32,7 @@ def root():
         "endpoints": ["/entries", "/random", "/categories"]
     }
 
+@app.get("/api/entries", include_in_schema=False)
 @app.get("/entries", tags=["Search"])
 def get_entries(
     category: str = Query(None, description="Filter by category (e.g., 'Animals')"),
@@ -61,6 +62,7 @@ def get_entries(
         "entries": results
     }
 
+@app.get("/api/random", include_in_schema=False)
 @app.get("/random", tags=["Search"])
 def get_random(
     category: str = Query(None, description="Filter by category before picking random")
@@ -77,6 +79,7 @@ def get_random(
         "entries": [random.choice(results)]
     }
 
+@app.get("/api/categories", include_in_schema=False)
 @app.get("/categories", tags=["Metadata"])
 def get_categories():
     categories = sorted(list(set([api.get("Category") for api in API_DATA if api.get("Category")])))

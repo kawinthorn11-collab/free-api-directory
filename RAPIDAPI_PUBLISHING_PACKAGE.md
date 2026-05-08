@@ -22,6 +22,7 @@ This API provides a fully searchable, programmatic REST interface to the famous 
 
 ## 3. Base URL Configuration
 *   **Base URL:** `https://free-api-directory-nxmezfwbj-kawinthorn11-7692s-projects.vercel.app`
+*   **RapidAPI Paths:** Use `/categories`, `/random`, and `/entries`. Do not add an `/api` prefix in RapidAPI.
 
 ## 4. Endpoints & Responses (Add to "Endpoints" tab)
 
@@ -54,6 +55,7 @@ This API provides a fully searchable, programmatic REST interface to the famous 
     - `auth` (String) - e.g., `No`
     - `cors` (String) - e.g., `yes`
     - `https` (Boolean)
+*   **Example Request:** `/entries?category=Weather&cors=yes`
 *   **Example Response:**
     ```json
     {
